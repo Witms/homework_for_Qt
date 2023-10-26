@@ -1,0 +1,6 @@
+/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/rebuild_cache.dir
+/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/edit_cache.dir
+/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/Chat.dir
+/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/translate_my_ru.dir
+/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/translations.dir
+/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/Chat_autogen.dir

@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+7e8ecba9a6dbf98c32efb3e1b3fdad1e ../../translations/my_ru.ts
+67b6f2b3df68d85f571e94f1bbaa3819 CMakeFiles/Chat_autogen
+32d884ba99306c88124440f5e537d03e CMakeFiles/translate_my_ru
+f4fdb703ada267f425c27f923a5084ae ui_mainwindow.h
