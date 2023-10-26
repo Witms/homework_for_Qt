@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -26,13 +27,14 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QGridLayout *gridLayout;
     QLabel *label;
     QLabel *label_2;
-    QPushButton *unplugPushButton;
-    QPushButton *banPushButton;
-    QLineEdit *targetUserLineEdit;
     QTextBrowser *userListTextBrowser;
     QTextBrowser *messageListTextBrowser;
+    QLineEdit *targetUserLineEdit;
+    QPushButton *unplugPushButton;
+    QPushButton *banPushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,29 +45,45 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        gridLayout = new QGridLayout(centralwidget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(150, 40, 54, 17));
         label->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label, 0, 0, 1, 2);
+
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(520, 40, 84, 17));
         label_2->setAlignment(Qt::AlignCenter);
-        unplugPushButton = new QPushButton(centralwidget);
-        unplugPushButton->setObjectName(QString::fromUtf8("unplugPushButton"));
-        unplugPushButton->setGeometry(QRect(60, 360, 101, 31));
-        banPushButton = new QPushButton(centralwidget);
-        banPushButton->setObjectName(QString::fromUtf8("banPushButton"));
-        banPushButton->setGeometry(QRect(200, 360, 101, 31));
-        targetUserLineEdit = new QLineEdit(centralwidget);
-        targetUserLineEdit->setObjectName(QString::fromUtf8("targetUserLineEdit"));
-        targetUserLineEdit->setGeometry(QRect(60, 320, 251, 25));
+
+        gridLayout->addWidget(label_2, 0, 2, 1, 1);
+
         userListTextBrowser = new QTextBrowser(centralwidget);
         userListTextBrowser->setObjectName(QString::fromUtf8("userListTextBrowser"));
-        userListTextBrowser->setGeometry(QRect(53, 81, 201, 16));
+
+        gridLayout->addWidget(userListTextBrowser, 1, 0, 1, 2);
+
         messageListTextBrowser = new QTextBrowser(centralwidget);
         messageListTextBrowser->setObjectName(QString::fromUtf8("messageListTextBrowser"));
-        messageListTextBrowser->setGeometry(QRect(433, 81, 281, 211));
+
+        gridLayout->addWidget(messageListTextBrowser, 1, 2, 1, 1);
+
+        targetUserLineEdit = new QLineEdit(centralwidget);
+        targetUserLineEdit->setObjectName(QString::fromUtf8("targetUserLineEdit"));
+
+        gridLayout->addWidget(targetUserLineEdit, 2, 0, 1, 2);
+
+        unplugPushButton = new QPushButton(centralwidget);
+        unplugPushButton->setObjectName(QString::fromUtf8("unplugPushButton"));
+
+        gridLayout->addWidget(unplugPushButton, 3, 0, 1, 1);
+
+        banPushButton = new QPushButton(centralwidget);
+        banPushButton->setObjectName(QString::fromUtf8("banPushButton"));
+
+        gridLayout->addWidget(banPushButton, 3, 1, 1, 1);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

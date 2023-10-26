@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "serverChat",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "serverChat::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serverChat-Debug-65345fd2cb114e8a208d.json",
+					"name" : "serverChat",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "serverChat_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serverChat_autogen-Debug-a29294afa4289f1c370f.json",
+					"name" : "serverChat_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "translate_my_ru::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-translate_my_ru-Debug-795d8598bdd709f21196.json",
+					"name" : "translate_my_ru",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-translations-Debug-e31f0550bc86e063c473.json",
+					"name" : "translations",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/guyver/Prog/homework_for_Qt/Server/build/debug",
+		"source" : "/home/guyver/Prog/homework_for_Qt/Server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

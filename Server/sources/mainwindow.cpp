@@ -39,7 +39,7 @@ void MainWindow::updateInformation()
     QString messageList;
     for(auto message : Messages)
     {
-        messageList.append(QString::fromStdString(message.getSender() + ": " + message.getText() + "\n"));
+        messageList.append(QString::fromStdString("<" + message.getSender() + "> say to <" + message.getRecipient() + ">: " + message.getText() + "\n"));
     }
 
     if(ui->messageListTextBrowser->toPlainText() != messageList)

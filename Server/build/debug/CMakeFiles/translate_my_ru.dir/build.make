@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests
+CMAKE_SOURCE_DIR = /home/guyver/Prog/homework_for_Qt/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug
+CMAKE_BINARY_DIR = /home/guyver/Prog/homework_for_Qt/Server/build/debug
 
 # Utility rule file for translate_my_ru.
 
@@ -60,6 +60,9 @@ CMakeFiles/translate_my_ru: ../../translations/my_ru.ts
 ../../translations/my_ru.ts: Chat_autogen/EXY53EAHJJ/moc_mainwindow.cpp
 ../../translations/my_ru.ts: Chat_autogen/moc_predefs.h
 ../../translations/my_ru.ts: Chat_autogen/mocs_compilation.cpp
+../../translations/my_ru.ts: serverChat_autogen/EXY53EAHJJ/moc_mainwindow.cpp
+../../translations/my_ru.ts: serverChat_autogen/moc_predefs.h
+../../translations/my_ru.ts: serverChat_autogen/mocs_compilation.cpp
 ../../translations/my_ru.ts: ui_mainwindow.h
 ../../translations/my_ru.ts: ../../sources/ConnectToDB.cpp
 ../../translations/my_ru.ts: ../../sources/ConnectToDB.h
@@ -70,12 +73,12 @@ CMakeFiles/translate_my_ru: ../../translations/my_ru.ts
 ../../translations/my_ru.ts: ../../sources/main.cpp
 ../../translations/my_ru.ts: ../../sources/mainwindow.cpp
 ../../translations/my_ru.ts: ../../sources/mainwindow.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../translations/my_ru.ts"
-	/usr/lib/qt5/bin/lupdate -recursive /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests -ts /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/translations/my_ru.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../translations/my_ru.ts"
+	/usr/lib/qt5/bin/lupdate -recursive /home/guyver/Prog/homework_for_Qt/Server -ts /home/guyver/Prog/homework_for_Qt/Server/translations/my_ru.ts
 
 ui_mainwindow.h: ../../sources/mainwindow.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_mainwindow.h"
-	/usr/lib/qt5/bin/uic -o /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/ui_mainwindow.h /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/sources/mainwindow.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_mainwindow.h"
+	/usr/lib/qt5/bin/uic -o /home/guyver/Prog/homework_for_Qt/Server/build/debug/ui_mainwindow.h /home/guyver/Prog/homework_for_Qt/Server/sources/mainwindow.ui
 
 translate_my_ru: CMakeFiles/translate_my_ru
 translate_my_ru: ../../translations/my_ru.ts
@@ -94,6 +97,6 @@ CMakeFiles/translate_my_ru.dir/clean:
 .PHONY : CMakeFiles/translate_my_ru.dir/clean
 
 CMakeFiles/translate_my_ru.dir/depend:
-	cd /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/translate_my_ru.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guyver/Prog/homework_for_Qt/Server/build/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guyver/Prog/homework_for_Qt/Server /home/guyver/Prog/homework_for_Qt/Server /home/guyver/Prog/homework_for_Qt/Server/build/debug /home/guyver/Prog/homework_for_Qt/Server/build/debug /home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles/translate_my_ru.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/translate_my_ru.dir/depend
 

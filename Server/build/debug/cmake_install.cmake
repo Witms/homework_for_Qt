@@ -1,4 +1,4 @@
-# Install script for directory: /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests
+# Install script for directory: /home/guyver/Prog/homework_for_Qt/Server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/guyver/Prog/homework_for_Qt/Server/build/debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

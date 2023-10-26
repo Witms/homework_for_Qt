@@ -14,94 +14,51 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>40</y>
-      <width>54</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>userList</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>40</y>
-      <width>84</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>messageList</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="unplugPushButton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>360</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>unplug</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="banPushButton">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>360</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ban</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="targetUserLineEdit">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>320</y>
-      <width>251</width>
-      <height>25</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="userListTextBrowser">
-    <property name="geometry">
-     <rect>
-      <x>53</x>
-      <y>81</y>
-      <width>201</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="messageListTextBrowser">
-    <property name="geometry">
-     <rect>
-      <x>433</x>
-      <y>81</y>
-      <width>281</width>
-      <height>211</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>userList</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>messageList</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QTextBrowser" name="userListTextBrowser"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QTextBrowser" name="messageListTextBrowser"/>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLineEdit" name="targetUserLineEdit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="unplugPushButton">
+      <property name="text">
+       <string>unplug</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="banPushButton">
+      <property name="text">
+       <string>Ban</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests
+CMAKE_SOURCE_DIR = /home/guyver/Prog/homework_for_Qt/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug
+CMAKE_BINARY_DIR = /home/guyver/Prog/homework_for_Qt/Server/build/debug
 
 # Utility rule file for translations.
 
@@ -67,6 +67,6 @@ CMakeFiles/translations.dir/clean:
 .PHONY : CMakeFiles/translations.dir/clean
 
 CMakeFiles/translations.dir/depend:
-	cd /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/translations.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guyver/Prog/homework_for_Qt/Server/build/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guyver/Prog/homework_for_Qt/Server /home/guyver/Prog/homework_for_Qt/Server /home/guyver/Prog/homework_for_Qt/Server/build/debug /home/guyver/Prog/homework_for_Qt/Server/build/debug /home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles/translations.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/translations.dir/depend
 

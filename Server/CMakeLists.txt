@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(Chat)
+project(serverChat)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -13,10 +13,10 @@ if ( MSVC )
     set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} /W4")
 endif()
 
-set(CHAT_LIBRARIES)
+set(serverChat_LIBRARIES)
 set(Qt5Modules Core Widgets)
 foreach(QtModule IN LISTS Qt5Modules)
-        list(APPEND CHAT_LIBRARIES Qt5::${QtModule})
+        list(APPEND serverChat_LIBRARIES Qt5::${QtModule})
 endforeach(QtModule)
 
 find_package(Qt5 COMPONENTS ${Qt5Modules} REQUIRED LinguistTools) # qttools5-dev package is needed for correct configurting
@@ -61,28 +61,28 @@ endforeach()
 link_directories(${LIBMYSQLCLIENT_LIBRARY_DIRS})
 
 
-add_executable(Chat ${QM_FILES} ${SRC_FILES} ${HEADERS_FILES} ${RC_FILES} ${UI_FILES})
+add_executable(serverChat ${QM_FILES} ${SRC_FILES} ${HEADERS_FILES} ${RC_FILES} ${UI_FILES})
 
-target_include_directories(Chat PRIVATE ${LIBMYSQLCLIENT_INCLUDE_DIRS})
-target_link_libraries(Chat PRIVATE ${LIBMYSQLCLIENT_LIBRARIES})
+target_include_directories(serverChat PRIVATE ${LIBMYSQLCLIENT_INCLUDE_DIRS})
+target_link_libraries(serverChat PRIVATE ${LIBMYSQLCLIENT_LIBRARIES})
 
-#target_include_directories(Chat
+#target_include_directories(serverChat
 #    PUBLIC
 #    /usr/include/mysql
 #    )
 
-#target_link_libraries(Chat
+#target_link_libraries(serverChat
 #    PUBLIC
 #    mysql
 #    )
 
-target_link_libraries(Chat
+target_link_libraries(serverChat
         PUBLIC
-        ${CHAT_LIBRARIES}
+        ${serverChat_LIBRARIES}
         )
 
 
 # file(GLOB_RECURSE SRC_FILES sources/*.cpp)
 # file(GLOB_RECURSE HEADERS_FILES sources/*.h)
 
-# add_executable(Chat ${SRC_FILES} ${HEADERS_FILES})
+# add_executable(serverChat ${SRC_FILES} ${HEADERS_FILES})

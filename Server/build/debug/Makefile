@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests
+CMAKE_SOURCE_DIR = /home/guyver/Prog/homework_for_Qt/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug
+CMAKE_BINARY_DIR = /home/guyver/Prog/homework_for_Qt/Server/build/debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles /home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guyver/Prog/Qt_from_SkillFactory/Homework_Qt/tests/build/debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guyver/Prog/homework_for_Qt/Server/build/debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Chat
+# Target rules for targets named serverChat
 
 # Build rule for target.
-Chat: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Chat
-.PHONY : Chat
+serverChat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 serverChat
+.PHONY : serverChat
 
 # fast build rule for target.
-Chat/fast:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/build
-.PHONY : Chat/fast
+serverChat/fast:
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/build
+.PHONY : serverChat/fast
 
 #=============================================================================
 # Target rules for targets named translate_my_ru
@@ -150,44 +150,44 @@ translations/fast:
 .PHONY : translations/fast
 
 #=============================================================================
-# Target rules for targets named Chat_autogen
+# Target rules for targets named serverChat_autogen
 
 # Build rule for target.
-Chat_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Chat_autogen
-.PHONY : Chat_autogen
+serverChat_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 serverChat_autogen
+.PHONY : serverChat_autogen
 
 # fast build rule for target.
-Chat_autogen/fast:
-	$(MAKE) -f CMakeFiles/Chat_autogen.dir/build.make CMakeFiles/Chat_autogen.dir/build
-.PHONY : Chat_autogen/fast
+serverChat_autogen/fast:
+	$(MAKE) -f CMakeFiles/serverChat_autogen.dir/build.make CMakeFiles/serverChat_autogen.dir/build
+.PHONY : serverChat_autogen/fast
 
-Chat_autogen/mocs_compilation.o: Chat_autogen/mocs_compilation.cpp.o
+serverChat_autogen/mocs_compilation.o: serverChat_autogen/mocs_compilation.cpp.o
 
-.PHONY : Chat_autogen/mocs_compilation.o
+.PHONY : serverChat_autogen/mocs_compilation.o
 
 # target to build an object file
-Chat_autogen/mocs_compilation.cpp.o:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/Chat_autogen/mocs_compilation.cpp.o
-.PHONY : Chat_autogen/mocs_compilation.cpp.o
+serverChat_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/serverChat_autogen/mocs_compilation.cpp.o
+.PHONY : serverChat_autogen/mocs_compilation.cpp.o
 
-Chat_autogen/mocs_compilation.i: Chat_autogen/mocs_compilation.cpp.i
+serverChat_autogen/mocs_compilation.i: serverChat_autogen/mocs_compilation.cpp.i
 
-.PHONY : Chat_autogen/mocs_compilation.i
+.PHONY : serverChat_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-Chat_autogen/mocs_compilation.cpp.i:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/Chat_autogen/mocs_compilation.cpp.i
-.PHONY : Chat_autogen/mocs_compilation.cpp.i
+serverChat_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/serverChat_autogen/mocs_compilation.cpp.i
+.PHONY : serverChat_autogen/mocs_compilation.cpp.i
 
-Chat_autogen/mocs_compilation.s: Chat_autogen/mocs_compilation.cpp.s
+serverChat_autogen/mocs_compilation.s: serverChat_autogen/mocs_compilation.cpp.s
 
-.PHONY : Chat_autogen/mocs_compilation.s
+.PHONY : serverChat_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-Chat_autogen/mocs_compilation.cpp.s:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/Chat_autogen/mocs_compilation.cpp.s
-.PHONY : Chat_autogen/mocs_compilation.cpp.s
+serverChat_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/serverChat_autogen/mocs_compilation.cpp.s
+.PHONY : serverChat_autogen/mocs_compilation.cpp.s
 
 sources/ConnectToDB.o: sources/ConnectToDB.cpp.o
 
@@ -195,7 +195,7 @@ sources/ConnectToDB.o: sources/ConnectToDB.cpp.o
 
 # target to build an object file
 sources/ConnectToDB.cpp.o:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/ConnectToDB.cpp.o
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/ConnectToDB.cpp.o
 .PHONY : sources/ConnectToDB.cpp.o
 
 sources/ConnectToDB.i: sources/ConnectToDB.cpp.i
@@ -204,7 +204,7 @@ sources/ConnectToDB.i: sources/ConnectToDB.cpp.i
 
 # target to preprocess a source file
 sources/ConnectToDB.cpp.i:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/ConnectToDB.cpp.i
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/ConnectToDB.cpp.i
 .PHONY : sources/ConnectToDB.cpp.i
 
 sources/ConnectToDB.s: sources/ConnectToDB.cpp.s
@@ -213,7 +213,7 @@ sources/ConnectToDB.s: sources/ConnectToDB.cpp.s
 
 # target to generate assembly for a file
 sources/ConnectToDB.cpp.s:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/ConnectToDB.cpp.s
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/ConnectToDB.cpp.s
 .PHONY : sources/ConnectToDB.cpp.s
 
 sources/Message.o: sources/Message.cpp.o
@@ -222,7 +222,7 @@ sources/Message.o: sources/Message.cpp.o
 
 # target to build an object file
 sources/Message.cpp.o:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/Message.cpp.o
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/Message.cpp.o
 .PHONY : sources/Message.cpp.o
 
 sources/Message.i: sources/Message.cpp.i
@@ -231,7 +231,7 @@ sources/Message.i: sources/Message.cpp.i
 
 # target to preprocess a source file
 sources/Message.cpp.i:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/Message.cpp.i
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/Message.cpp.i
 .PHONY : sources/Message.cpp.i
 
 sources/Message.s: sources/Message.cpp.s
@@ -240,7 +240,7 @@ sources/Message.s: sources/Message.cpp.s
 
 # target to generate assembly for a file
 sources/Message.cpp.s:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/Message.cpp.s
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/Message.cpp.s
 .PHONY : sources/Message.cpp.s
 
 sources/User.o: sources/User.cpp.o
@@ -249,7 +249,7 @@ sources/User.o: sources/User.cpp.o
 
 # target to build an object file
 sources/User.cpp.o:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/User.cpp.o
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/User.cpp.o
 .PHONY : sources/User.cpp.o
 
 sources/User.i: sources/User.cpp.i
@@ -258,7 +258,7 @@ sources/User.i: sources/User.cpp.i
 
 # target to preprocess a source file
 sources/User.cpp.i:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/User.cpp.i
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/User.cpp.i
 .PHONY : sources/User.cpp.i
 
 sources/User.s: sources/User.cpp.s
@@ -267,7 +267,7 @@ sources/User.s: sources/User.cpp.s
 
 # target to generate assembly for a file
 sources/User.cpp.s:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/User.cpp.s
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/User.cpp.s
 .PHONY : sources/User.cpp.s
 
 sources/main.o: sources/main.cpp.o
@@ -276,7 +276,7 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -285,7 +285,7 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -294,7 +294,7 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
 sources/mainwindow.o: sources/mainwindow.cpp.o
@@ -303,7 +303,7 @@ sources/mainwindow.o: sources/mainwindow.cpp.o
 
 # target to build an object file
 sources/mainwindow.cpp.o:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/mainwindow.cpp.o
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/mainwindow.cpp.o
 .PHONY : sources/mainwindow.cpp.o
 
 sources/mainwindow.i: sources/mainwindow.cpp.i
@@ -312,7 +312,7 @@ sources/mainwindow.i: sources/mainwindow.cpp.i
 
 # target to preprocess a source file
 sources/mainwindow.cpp.i:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/mainwindow.cpp.i
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/mainwindow.cpp.i
 .PHONY : sources/mainwindow.cpp.i
 
 sources/mainwindow.s: sources/mainwindow.cpp.s
@@ -321,7 +321,7 @@ sources/mainwindow.s: sources/mainwindow.cpp.s
 
 # target to generate assembly for a file
 sources/mainwindow.cpp.s:
-	$(MAKE) -f CMakeFiles/Chat.dir/build.make CMakeFiles/Chat.dir/sources/mainwindow.cpp.s
+	$(MAKE) -f CMakeFiles/serverChat.dir/build.make CMakeFiles/serverChat.dir/sources/mainwindow.cpp.s
 .PHONY : sources/mainwindow.cpp.s
 
 # Help Target
@@ -332,13 +332,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Chat"
+	@echo "... serverChat"
 	@echo "... translate_my_ru"
 	@echo "... translations"
-	@echo "... Chat_autogen"
-	@echo "... Chat_autogen/mocs_compilation.o"
-	@echo "... Chat_autogen/mocs_compilation.i"
-	@echo "... Chat_autogen/mocs_compilation.s"
+	@echo "... serverChat_autogen"
+	@echo "... serverChat_autogen/mocs_compilation.o"
+	@echo "... serverChat_autogen/mocs_compilation.i"
+	@echo "... serverChat_autogen/mocs_compilation.s"
 	@echo "... sources/ConnectToDB.o"
 	@echo "... sources/ConnectToDB.i"
 	@echo "... sources/ConnectToDB.s"

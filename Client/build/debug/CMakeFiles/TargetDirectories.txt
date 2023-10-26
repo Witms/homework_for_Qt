@@ -1,0 +1,6 @@
+/home/guyver/Prog/homework_for_Qt/Client/build/debug/CMakeFiles/rebuild_cache.dir
+/home/guyver/Prog/homework_for_Qt/Client/build/debug/CMakeFiles/edit_cache.dir
+/home/guyver/Prog/homework_for_Qt/Client/build/debug/CMakeFiles/clientChat.dir
+/home/guyver/Prog/homework_for_Qt/Client/build/debug/CMakeFiles/translate_my_ru.dir
+/home/guyver/Prog/homework_for_Qt/Client/build/debug/CMakeFiles/translations.dir
+/home/guyver/Prog/homework_for_Qt/Client/build/debug/CMakeFiles/clientChat_autogen.dir
