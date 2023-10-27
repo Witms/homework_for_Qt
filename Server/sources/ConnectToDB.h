@@ -22,7 +22,7 @@ class ConnectToDB {
         std::vector<Message> getAllMessage();
         int banUser(User user);
         int unplugUser(User user);
-        bool userIsBan(User user);
+        bool userIsBanned(User user);
 
 
 };

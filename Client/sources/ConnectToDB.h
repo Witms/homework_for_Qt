@@ -28,7 +28,7 @@ class ConnectToDB {
         std::vector<Message> getPublicMessage(User recipientUser);
         std::vector<Message> getPrivateMessage(User recipientUser);
         int addUser(User user);
-        bool userIsBan(User user);
+        bool userIsBanned(User user);
         bool userExists(User user);
 
 

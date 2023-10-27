@@ -59,3 +59,4 @@ std::shared_ptr<ConnectToDB> StartScreen::getDatabase() const
     return m_dbPtr;
 }
 
+

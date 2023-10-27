@@ -21,13 +21,14 @@ MainWindow::MainWindow(QString userLog, std::shared_ptr<ConnectToDB> dbPtr, QWid
         m_dbPtr = dbPtr;
     else
         m_dbPtr = make_shared<ConnectToDB>();
+
     auto timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &MainWindow::updateChats);
     timer->start(10);
 
     auto banTimer = new QTimer(this);
     connect(banTimer, &QTimer::timeout, this, &MainWindow::banCheck);
-    banTimer->start(5);
+    banTimer->start(200);
 }
 
 MainWindow::~MainWindow()
@@ -155,7 +156,7 @@ void MainWindow::updateChats()
 void MainWindow::banCheck()
 {
     User user(m_userLog.toStdString());
-    bool is_ban = m_dbPtr->userIsBan(user);
+    bool is_ban = m_dbPtr->userIsBanned(user);
     if(is_ban)
     {
         this->close();

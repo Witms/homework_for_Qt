@@ -83,7 +83,7 @@ int ConnectToDB::unplugUser(User user)
     return 0;
 }
 
-bool ConnectToDB::userIsBan(User user)
+bool ConnectToDB::userIsBanned(User user)
 {
     std::string request = "select * from users where log =";
     std::string suffix = "'" + user.getLogin() + "'";

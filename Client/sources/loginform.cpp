@@ -7,6 +7,7 @@ LoginForm::LoginForm(QWidget *parent) :
     ui(new Ui::LoginForm)
 {
     ui->setupUi(this);
+
 }
 
 LoginForm::~LoginForm()
@@ -35,6 +36,13 @@ void LoginForm::on_buttonBox_accepted()
         QMessageBox::critical(this,
                               tr("Error"),
                               tr("Password is wrong"));
+        return;
+    }
+    if(m_dbPtr->userIsBanned(targetUser))
+    {
+        QMessageBox::critical(this,
+                              tr("Error"),
+                              tr("You are banned"));
         return;
     }
 

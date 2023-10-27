@@ -247,7 +247,7 @@ std::vector<Message> ConnectToDB::getPrivateMessage(User recipientUser)
     return result;
 }
 
-bool ConnectToDB::userIsBan(User user)
+bool ConnectToDB::userIsBanned(User user)
 {
     std::string request = "select is_banned from users where log =";
     std::string suffix = "'" + user.getLogin() + "'";

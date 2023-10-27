@@ -7,6 +7,7 @@ RegistrationForm::RegistrationForm(QWidget *parent) :
     ui(new Ui::RegistrationForm)
 {
     ui->setupUi(this);
+
 }
 
 RegistrationForm::~RegistrationForm()
